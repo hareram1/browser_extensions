@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Friends Profile Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Friends Profiles</h1>
+  
+  <div id="platforms">
+    <!-- GitHub Section -->
+    <div class="platform" data-platform="github">
+      <h2>GitHub</h2>
+      <input type="text" id="github-username" placeholder="Enter GitHub username">
+      <button id="add-github">Add</button>
+      <ul id="github-list"></ul>
+      <div id="github-data" class="data-section"></div>
+    </div>
+    
+    <!-- LeetCode Section -->
+    <div class="platform" data-platform="leetcode">
+      <h2>LeetCode</h2>
+      <input type="text" id="leetcode-username" placeholder="Enter LeetCode username">
+      <button id="add-leetcode">Add</button>
+      <ul id="leetcode-list"></ul>
+      <div id="leetcode-data" class="data-section"></div>
+    </div>
+    
+    <!-- Add more platforms as needed -->
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

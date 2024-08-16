@@ -1,0 +1,172 @@
+/* styles.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%; /* Use full width */
+  min-width: 500px; /* Set a minimum width */
+  max-width: 500px; /* Max width for consistency */
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scroll bar */
+  transition: background-color 0.3s ease;
+}
+
+/* Custom scroll bar styles */
+body::-webkit-scrollbar {
+  width: 12px; /* Width of the scroll bar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #00ffcc; /* Color of the scroll bar thumb */
+  border-radius: 10px; /* Round the corners of the scroll bar thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #00e6b8; /* Color when hovering over the thumb */
+}
+
+body::-webkit-scrollbar-track {
+  background: #282828; /* Background of the scroll bar track */
+  border-radius: 10px; /* Round the corners of the track */
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px; /* Increased font size */
+  margin-bottom: 20px;
+}
+
+body:hover {
+  background-color: #2a2a2a;
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #00ffcc; /* Neon teal */
+}
+
+.platform {
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #282828; /* Dark background for platforms */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.platform:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 25px rgba(0, 255, 204, 0.3);
+}
+
+.platform h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #00ffcc; /* Neon teal */
+  border-bottom: 2px solid #00ffcc; /* Neon teal underline */
+  padding-bottom: 5px;
+}
+
+.platform input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #3c3c3c; /* Dark input background */
+  color: #ffffff; /* White text */
+  transition: border 0.3s ease;
+}
+
+.platform input:focus {
+  border-color: #00ffcc; /* Neon teal */
+  outline: none;
+}
+
+.platform button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #00ffcc; /* Neon teal */
+  color: #1c1c1c; /* Dark text */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.platform button:hover {
+  background-color: #00e6b8; /* Lighter teal */
+  transform: translateY(-2px);
+}
+
+.platform ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.platform ul li {
+  margin-bottom: 5px;
+}
+
+.platform ul li a {
+  text-decoration: none;
+  color: #00ffcc; /* Neon teal */
+}
+
+.platform ul li a:hover {
+  text-decoration: underline;
+  color: #00e6b8; /* Lighter teal */
+}
+
+.data-section {
+  margin-top: 15px;
+  padding: 10px;
+  border-top: 1px solid #444;
+}
+
+.user-data {
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.user-data h3 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.user-data p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #cccccc; /* Light gray for text */
+}
+
+.user-data img {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.error {
+  color: #ff4d4d; /* Red for errors */
+  font-size: 14px;
+}
+
+/* Add responsiveness */
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .platform input {
+    width: calc(100% - 20px);
+    margin-right: 0;
+  }
+}
