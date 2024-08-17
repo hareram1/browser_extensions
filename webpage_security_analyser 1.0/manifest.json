@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Page Security Checker",
+  "version": "2.1",
+  "description": "Check if the current page is secure with additional security features.",
+  "permissions": [
+    "activeTab",
+    "declarativeNetRequest", 
+    "tabs",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
