@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 15px;
+  width: 300px; /* Increased width for better layout */
+  background-color: #fff; /* Changed to white for better contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+h1 {
+  font-size: 22px; /* Slightly larger for prominence */
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333; /* Dark gray for better readability */
+}
+
+.container {
+  padding: 10px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  border-radius: 5px; /* Rounded corners for status box */
+  padding: 10px;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+#icon {
+  width: 64px; /* Increased icon size */
+  height: 64px; /* Increased icon size */
+  margin-right: 10px;
+}
+
+#message {
+  font-size: 18px; /* Slightly larger message font */
+  font-weight: bold;
+  text-align: center;
+  color: #444; /* Darker text for better contrast */
+}
+
+.details {
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+h2 {
+  font-size: 18px; /* Increased heading size */
+  margin-bottom: 5px;
+  color: #555; /* Slightly lighter gray */
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+  color: #666; /* Light gray for list items */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Add hover effects for list items */
+li:hover {
+  color: #333; /* Darker on hover */
+  cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Styles for different statuses */
+.secure {
+  background-color: #d4edda; /* Light green */
+}
+
+.insecure {
+  background-color: #f8d7da; /* Light red */
+}
+
+.warning {
+  background-color: #fff3cd; /* Light yellow */
+}
+
+.danger {
+  background-color: #f5c6cb; /* Light pink */
+}
+
+.alert {
+  background-color: #ffeeba; /* Light orange */
+}
+
+/* Additional styling for icons */
+img {
+  border-radius: 5px; /* Rounded icon corners */
+}

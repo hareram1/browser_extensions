@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page Security Checker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Page Security Status</h1>
+        <div class="status">
+            <img id="icon" src="images/icon48.png" alt="Security Status Icon">
+            <p id="message">Checking security...</p>
+        </div>
+        <div class="details">
+            <h2>Status Details</h2>
+            <ul>
+                <li><strong>Green Icon:</strong> This page is secure (HTTPS).</li>
+                <li><strong>Red Icon:</strong> This page is not secure (HTTP).</li>
+                <li><strong>Warning Icon:</strong> Mixed content or insecure forms are present.</li>
+                <li><strong>Danger Icon:</strong> This page is flagged as unsafe.</li>
+                <li><strong>Alert Icon:</strong> Insecure login form detected.</li>
+            </ul>
+            <h2>Messages</h2>
+            <ul>
+                <li>"This page is secure (HTTPS)."</li>
+                <li>"This page is not secure (HTTP)."</li>
+                <li>"This page has mixed content!"</li>
+                <li>"Warning: Insecure login form detected!"</li>
+                <li>"Warning: This page is flagged as unsafe!"</li>
+                <li>"This page contains tracking scripts!"</li>
+            </ul>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
