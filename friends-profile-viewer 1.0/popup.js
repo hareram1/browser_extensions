@@ -1,5 +1,3 @@
-// popup.js
-
 // Define platforms with their base URLs, API endpoints, and corresponding fetch/display functions
 const platforms = {
   github: {
@@ -23,7 +21,7 @@ const platforms = {
     fetchFunction: fetchGFGData,
     displayFunction: displayGFGData
 }
-  // Add more platforms as needed
+// We can add more platform here if needed
 };
 
 // Initialize the extension when the DOM is fully loaded
@@ -32,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupEventListeners();
 });
 
+// To save the details in the browser so that next when we open it loads the users automatically
 // Load saved usernames from chrome.storage
 function loadUsernames() {
   chrome.storage.sync.get(['platforms'], (result) => {
@@ -49,7 +48,7 @@ function loadUsernames() {
 
 // Setup event listeners for Add buttons
 function setupEventListeners() {
-  // GitHub
+  // GitHub data
   const addGitHubButton = document.getElementById('add-github');
   if (addGitHubButton) {
     addGitHubButton.addEventListener('click', () => {
@@ -57,7 +56,7 @@ function setupEventListeners() {
     });
   }
   
-  // LeetCode
+  // LeetCode data
   const addLeetCodeButton = document.getElementById('add-leetcode');
   if (addLeetCodeButton) {
     addLeetCodeButton.addEventListener('click', () => {
@@ -65,7 +64,7 @@ function setupEventListeners() {
     });
   }
 
-  // GeeksforGeeks
+  // GeeksforGeeks data
   const addGFGButton = document.getElementById('add-gfg');
   if (addGFGButton) {
       addGFGButton.addEventListener('click', () => {
@@ -253,7 +252,7 @@ async function displayLeetCodeData(platform) {
   }
 }
 
-// Display GeeksforGeeks user data in the popup
+// Display GeeksforGeeks user data in the popup (some error in API data is not getting fetched)
 async function displayGFGData(platform) {
   const container = document.getElementById(`${platform}-data`);
   if (!container) return;
