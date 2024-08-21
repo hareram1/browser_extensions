@@ -1,6 +1,5 @@
-// popup.js
+// popup.js 
 
-// Define platforms with their base URLs, API endpoints, and corresponding fetch/display functions
 const platforms = {
   github: {
     baseUrl: "https://github.com/",
@@ -24,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupEventListeners();
 });
 
-// Load saved usernames from chrome.storage
+// Load saved usernames from chrome.storage (so that when we open it next time it loads automatically)
 function loadUsernames() {
   chrome.storage.sync.get(['platforms'], (result) => {
     if (result.platforms) {
@@ -170,12 +169,12 @@ async function displayGitHubData(platform) {
   const container = document.getElementById(`${platform}-data`);
   if (!container) return;
 
-  container.innerHTML = ''; // Clear previous data
+  container.innerHTML = '';
 
   for (const username of platforms[platform].usernames) {
     try {
       const userData = await platforms[platform].fetchFunction(username);
-      const reposData = await fetchGitHubRepos(username); // Fetch repositories
+      const reposData = await fetchGitHubRepos(username); // Fetch repositories (To view the names of the repos directly)
 
       const userDiv = document.createElement('div');
       userDiv.classList.add('user-data');
