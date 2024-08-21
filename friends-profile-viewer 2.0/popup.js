@@ -209,7 +209,7 @@ async function displayLeetCodeData(platform) {
   const container = document.getElementById(`${platform}-data`);
   if (!container) return;
   
-  container.innerHTML = ''; // Clear previous data
+  container.innerHTML = ''; 
 
   for (const username of platforms[platform].usernames) {
     try {
