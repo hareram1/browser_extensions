@@ -28,6 +28,7 @@
     "https://api.github.com/*",
     "https://leetcode.com/*"
   ],
+  
   "default_popup": {
     "width": 1000, 
     "height": 600 
