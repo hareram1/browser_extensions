@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         headers: request.headers || {},
         body: request.body || null,
         mode: 'cors' 
-        // Ensure that CORS is enabled
+        
       })
         .then(response => {
           if (!response.ok) {
