@@ -1,5 +1,3 @@
-// background.js
-
 // Listen for messages from popup.js
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === 'fetchData') {
@@ -7,7 +5,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         method: request.method || 'GET',
         headers: request.headers || {},
         body: request.body || null,
-        mode: 'cors' // Ensure that CORS is enabled
+        mode: 'cors' 
+        // Ensure that CORS is enabled
       })
         .then(response => {
           if (!response.ok) {
