@@ -1,6 +1,5 @@
 // popup.js
 
-// Define platforms with their base URLs, API endpoints, and corresponding fetch/display functions
 const platforms = {
   github: {
     baseUrl: "https://github.com/",
@@ -24,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupEventListeners();
 });
 
-// Load saved usernames from chrome.storage
+// Load saved usernames from chrome.storage (so that it retrive the saved users)
 function loadUsernames() {
   chrome.storage.sync.get(['platforms'], (result) => {
     if (result.platforms) {
@@ -71,7 +70,7 @@ function addUsername(platform) {
   }
 }
 
-// Save usernames to chrome.storage
+// Save usernames to chrome.storage (for saving the usenames/data)
 function saveUsernames() {
   const storageData = {};
   Object.keys(platforms).forEach(platform => {
