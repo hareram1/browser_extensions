@@ -71,8 +71,8 @@ h1 {
 .platform h2 {
   margin-bottom: 10px;
   font-size: 20px;
-  color: #00ffcc; /* Neon teal */
-  border-bottom: 2px solid #00ffcc; /* Neon teal underline */
+  color: #00ffcc; 
+  border-bottom: 2px solid #00ffcc; 
   padding-bottom: 5px;
 }
 
@@ -119,12 +119,12 @@ h1 {
 
 .platform ul li a {
   text-decoration: none;
-  color: #00ffcc; /* Neon teal */
+  color: #00ffcc; 
 }
 
 .platform ul li a:hover {
   text-decoration: underline;
-  color: #00e6b8; /* Lighter teal */
+  color: #00e6b8; 
 }
 
 .data-section {
@@ -156,6 +156,7 @@ h1 {
   border-radius: 5px;
 }
 
+/*If get some error the the error message ...*/
 .error {
   color: #ff4d4d; /* Red for errors */
   font-size: 14px;
