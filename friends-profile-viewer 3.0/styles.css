@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
   font-family: 'Roboto', sans-serif;
   width: 100%; /* Use full width */
@@ -17,7 +15,8 @@ body {
 
 /* Custom scroll bar styles */
 body::-webkit-scrollbar {
-  width: 12px; /* Width of the scroll bar */
+
+  width: 12px; 
 }
 
 body::-webkit-scrollbar-thumb {
@@ -26,11 +25,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: #00e6b8; /* Color when hovering over the thumb */
+  /* Color when hovering over the thumb */
+  background: #00e6b8; 
 }
 
 body::-webkit-scrollbar-track {
-  background: #282828; /* Background of the scroll bar track */
+  /* Background of the scroll bar track */
+  background: #282828; 
   border-radius: 10px; /* Round the corners of the track */
 }
 
