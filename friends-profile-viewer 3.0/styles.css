@@ -31,13 +31,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 body::-webkit-scrollbar-track {
   /* Background of the scroll bar track */
-  background: #282828; 
-  border-radius: 10px; /* Round the corners of the track */
+  background: #282828;
+  /* Round the corners of the track */ 
+  border-radius: 10px; 
 }
 
 h1 {
   text-align: center;
-  font-size: 24px; /* Increased font size */
+  font-size: 24px;  /* Increased font size */
   margin-bottom: 20px;
 }
 
@@ -49,7 +50,7 @@ h1 {
   text-align: center;
   font-size: 26px;
   margin-bottom: 20px;
-  color: #00ffcc; /* Neon teal */
+  color: #00ffcc;
 }
 
 .platform {
@@ -61,6 +62,7 @@ h1 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/*Hover style */
 .platform:hover {
   transform: scale(1.02);
   box-shadow: 0 6px 25px rgba(0, 255, 204, 0.3);
