@@ -1,9 +1,12 @@
 let message = document.getElementById("message");
 let icon = document.getElementById("icon");
 
-// Check if the page is using HTTPS
+// Check if the page is using HTTPS or HTTP
 chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
   let currentTabUrl = tabs[0].url;
+
+  // Green colour for HTTPS
+  //RED for HTTP
 
   if (currentTabUrl.startsWith("https://")) {
     message.textContent = "This page is secure (HTTPS).";
