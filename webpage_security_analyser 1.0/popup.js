@@ -16,7 +16,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     icon.src = "images/icon48-red.png";
   }
 
-  // Check for Mixed Content (insecure content on an HTTPS page)
+  // Check for Mixed Content (insecure content on an HTTPS page)(eg. if it is sending data to insecure soure..., or other mixed contents)
   chrome.tabs.executeScript({
     code: `
       let mixedContent = Array.from(document.querySelectorAll("img[src^='http:'], script[src^='http:'], link[href^='http:']")).length > 0;
@@ -30,7 +30,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     }
   });
 
-  // Check for insecure login forms (using HTTP for form submission)
+  // Check for insecure login forms (using HTTP for form submission or anything else)
   chrome.tabs.executeScript({
     code: `
       let forms = Array.from(document.querySelectorAll("form"));
