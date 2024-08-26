@@ -40,7 +40,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
   }, (results) => {
     if (results[0] > 0) {
       message.textContent += "\nWarning: Insecure login form detected!";
-      message.style.color = "#ff3300"; // Alert color
+      message.style.color = "#ff3300"; // Alert color if insecure login form detected
       icon.src = "images/icon48-alert.png";
     }
   });
