@@ -5,9 +5,7 @@ let icon = document.getElementById("icon");
 chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
   let currentTabUrl = tabs[0].url;
 
-  // Green colour for HTTPS
-  //RED for HTTP
-
+  // GREEN colour for HTTPS  and RED for HTTP
   if (currentTabUrl.startsWith("https://")) {
     message.textContent = "This page is secure (HTTPS).";
     message.style.color = "#28a745"; // Green
