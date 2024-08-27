@@ -83,7 +83,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     if (results[0] > 0) {
       message.textContent += "\nThis page contains tracking scripts!";
       message.style.color = "#ff6600"; // Warning color
-      icon.src = "images/icon48-tracking.png"; // Tracking warning icon
+      icon.src = "images/icon48-tracking.png";
     }
   });
 });

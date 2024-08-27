@@ -1,11 +1,13 @@
+/*styles.css for designs*/
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 15px;
-  width: 300px; /* Increased width for better layout */
-  background-color: #fff; /* Changed to white for better contrast */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  width: 300px; 
+  background-color: #fff;
+  border-radius: 8px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
