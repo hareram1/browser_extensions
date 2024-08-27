@@ -11,24 +11,26 @@ body {
 }
 
 h1 {
-  font-size: 22px; /* Slightly larger for prominence */
+  font-size: 22px; 
   text-align: center;
   margin-bottom: 15px;
-  color: #333; /* Dark gray for better readability */
+  color: #333; 
 }
 
 .container {
   padding: 10px;
 }
 
+
+/*For the status part*/
 .status {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
-  border-radius: 5px; /* Rounded corners for status box */
+  border-radius: 5px; 
   padding: 10px;
-  transition: background-color 0.3s ease; /* Smooth background transition */
+  transition: background-color 0.3s ease; 
 }
 
 #icon {
