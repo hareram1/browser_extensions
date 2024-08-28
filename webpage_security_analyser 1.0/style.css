@@ -53,9 +53,9 @@ h1 {
 }
 
 h2 {
-  font-size: 18px; /* Increased heading size */
+  font-size: 18px; 
   margin-bottom: 5px;
-  color: #555; /* Slightly lighter gray */
+  color: #555; 
 }
 
 ul {
@@ -72,7 +72,7 @@ li {
 /* Add hover effects for list items */
 li:hover {
   color: #333; 
-  cursor: pointer; /* Pointer cursor for interactivity */
+  cursor: pointer; 
 }
 
 /* Styles for different statuses */
