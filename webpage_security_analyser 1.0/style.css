@@ -72,7 +72,7 @@ li {
 /* Add hover effects for list items */
 li:hover {
   color: #333; 
-  cursor: pointer; 
+  cursor: pointer; /* Pointer cursor for interactivity */
 }
 
 /* Styles for different statuses */
@@ -98,5 +98,5 @@ li:hover {
 
 /* Additional styling for icons */
 img {
-  border-radius: 5px; /* Rounded corners of the icons */
+  border-radius: 5px; /* Rounded icon corners */
 }
