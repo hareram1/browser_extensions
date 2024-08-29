@@ -67,12 +67,12 @@ chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
   .then(data => {
     if (data.matches) {
       message.textContent += "\nWarning: This page is flagged as unsafe!";
-      message.style.color = "#ff0000"; // Red for danger
+      message.style.color = "#ff0000"; // Red for danger alert
       icon.src = "images/icon48-danger.png";
     }
   });
 
-  // Check for tracking scripts
+  // Check for tracking scripts in the webpages
   chrome.tabs.executeScript({
     code: `
       let trackingScripts = Array.from(document.querySelectorAll("script[src]")).filter(script =>
