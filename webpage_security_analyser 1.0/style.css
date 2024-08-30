@@ -85,15 +85,15 @@ li:hover {
 }
 
 .warning {
-  background-color: #fff3cd; /* Light yellow */
+  background-color: #fff3cd; 
 }
 
 .danger {
-  background-color: #f5c6cb; /* Light pink */
+  background-color: #f5c6cb; 
 }
 
 .alert {
-  background-color: #ffeeba; /* Light orange */
+  background-color: #ffeeba; 
 }
 
 /* Additional styling for icons */
