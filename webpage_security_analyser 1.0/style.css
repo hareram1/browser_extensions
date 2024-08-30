@@ -77,11 +77,11 @@ li:hover {
 
 /* Styles for different statuses */
 .secure {
-  background-color: #d4edda; /* Light green */
+  background-color: #d4edda; 
 }
 
 .insecure {
-  background-color: #f8d7da; /* Light red */
+  background-color: #f8d7da; 
 }
 
 .warning {
