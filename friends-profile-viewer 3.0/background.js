@@ -26,7 +26,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         .catch(error => {
           sendResponse({ error: error.message });
         });
-      // Indicate that the response will be sent asynchronously
       return true;
     }
   });
